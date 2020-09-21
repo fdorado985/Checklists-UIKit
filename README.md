@@ -9,6 +9,6 @@ The app lets you organize to-do items into lists and then check off these items 
 
 ## To-Do List Programming
 
-* [x] Put a table view on the app’s screen.
+* [ ] Put a table view on the app’s screen.
 * [ ] Put data into that table view.
 * [ ] Allow the user to tap a row in the table to toggle a checkmark on and off.
