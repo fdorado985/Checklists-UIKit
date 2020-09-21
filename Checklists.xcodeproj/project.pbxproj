@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A912E9AB25194F980051FF33 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912E9AA25194F980051FF33 /* ChecklistItem.swift */; };
 		A94803F525194040000A8689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94803F425194040000A8689 /* AppDelegate.swift */; };
 		A94803F725194040000A8689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94803F625194040000A8689 /* SceneDelegate.swift */; };
 		A94803F925194040000A8689 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94803F825194040000A8689 /* ChecklistViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A912E9AA25194F980051FF33 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		A94803F125194040000A8689 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94803F425194040000A8689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94803F625194040000A8689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				A94803FD25194041000A8689 /* Assets.xcassets */,
 				A94803FF25194041000A8689 /* LaunchScreen.storyboard */,
 				A948040225194041000A8689 /* Info.plist */,
+				A912E9AA25194F980051FF33 /* ChecklistItem.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				A94803F925194040000A8689 /* ChecklistViewController.swift in Sources */,
 				A94803F525194040000A8689 /* AppDelegate.swift in Sources */,
 				A94803F725194040000A8689 /* SceneDelegate.swift in Sources */,
+				A912E9AB25194F980051FF33 /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
