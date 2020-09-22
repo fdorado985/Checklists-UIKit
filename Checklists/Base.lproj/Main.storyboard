@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,7 +48,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="gCU-Nv-eiF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9DQ-Yv-0fO">
                             <connections>
-                                <action selector="addItem" destination="AfM-Cn-iCv" id="fR7-Rw-q5P"/>
+                                <segue destination="3Ny-5S-zrx" kind="show" id="m9I-7E-ga1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,6 +74,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FsJ-n4-3eZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+        <!--Add Item-->
+        <scene sceneID="EvX-T0-I2j">
+            <objects>
+                <viewController id="3Ny-5S-zrx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GYQ-qG-KY0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VFL-38-FDD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Item" largeTitleDisplayMode="never" id="wCu-Ag-ceD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ofd-re-lbe"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="do4-Op-tv6"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ha-bM-FvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="120"/>
         </scene>
     </scenes>
     <resources>
