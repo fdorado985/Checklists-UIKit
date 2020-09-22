@@ -15,6 +15,11 @@ class AddItemViewController: UITableViewController {
     navigationItem.largeTitleDisplayMode = .never
   }
 
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    textField.becomeFirstResponder()
+  }
+
   // MARK: - Actions
   @IBAction func cancel() {
     navigationController?.popViewController(animated: true)
