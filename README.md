@@ -15,6 +15,6 @@ The app lets you organize to-do items into lists and then check off these items 
 * [x] Add a navigation controller to Checklists to allow navigation between screens and add a button to the navigation bar to allow adding new items.
 * [x] Add the ability to delete rows from a list of items presented via a table view.
 * [x] Create a new screen from which you can (eventually) add new to-do items.
-* [ ] Add a static table view cell to the table to display the text field for data entry.
-* [ ] Access the contents of the text field.
-* [ ] Improve the look and functionality of the Add Item screen.
+* [x] Add a static table view cell to the table to display the text field for data entry.
+* [x] Access the contents of the text field.
+* [x] Improve the look and functionality of the Add Item screen.
