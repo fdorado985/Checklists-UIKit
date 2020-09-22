@@ -127,13 +127,14 @@
                                 <action selector="cancel" destination="9B2-dr-egg" id="g0K-3r-ea4"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="o4I-bB-xkc">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="o4I-bB-xkc">
                             <connections>
                                 <action selector="done" destination="9B2-dr-egg" id="fyJ-GM-a9d"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneBarButton" destination="o4I-bB-xkc" id="PFQ-fH-n0B"/>
                         <outlet property="textField" destination="n3R-qV-Xgl" id="BFQ-7h-YGB"/>
                     </connections>
                 </tableViewController>
