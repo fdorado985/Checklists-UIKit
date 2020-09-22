@@ -98,9 +98,10 @@
                                                         <constraint firstAttribute="height" constant="45" id="oWo-pi-ag0"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
                                                         <action selector="done" destination="9B2-dr-egg" eventType="editingDidEndOnExit" id="or2-BA-Fbt"/>
+                                                        <outlet property="delegate" destination="9B2-dr-egg" id="pPa-mU-EbE"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
