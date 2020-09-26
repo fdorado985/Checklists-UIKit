@@ -11,7 +11,7 @@
         <scene sceneID="oxG-b3-De6">
             <objects>
                 <tableViewController id="AfM-Cn-iCv" customClass="ChecklistViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sKP-iZ-oGw">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sKP-iZ-oGw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -24,7 +24,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIM-Qu-mIj">
-                                            <rect key="frame" x="20" y="12" width="350" height="21"/>
+                                            <rect key="frame" x="51" y="12" width="319" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⬛️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW3-bh-MaY">
+                                            <rect key="frame" x="20" y="12" width="23" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="23" id="kcq-Yr-zeq"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -32,8 +41,10 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="eIM-Qu-mIj" secondAttribute="bottom" constant="12" id="1m5-uv-hHk"/>
+                                        <constraint firstItem="RW3-bh-MaY" firstAttribute="centerY" secondItem="9Eg-pI-Hrg" secondAttribute="centerY" id="3ZN-fR-3QD"/>
                                         <constraint firstItem="eIM-Qu-mIj" firstAttribute="top" secondItem="9Eg-pI-Hrg" secondAttribute="top" constant="12" id="B8S-2e-Pm6"/>
-                                        <constraint firstItem="eIM-Qu-mIj" firstAttribute="leading" secondItem="9Eg-pI-Hrg" secondAttribute="leading" constant="20" symbolic="YES" id="YLx-x8-Qa5"/>
+                                        <constraint firstItem="RW3-bh-MaY" firstAttribute="leading" secondItem="9Eg-pI-Hrg" secondAttribute="leadingMargin" id="H7k-SO-lKG"/>
+                                        <constraint firstItem="eIM-Qu-mIj" firstAttribute="leading" secondItem="RW3-bh-MaY" secondAttribute="trailing" constant="8" symbolic="YES" id="l6Q-ND-mux"/>
                                         <constraint firstAttribute="trailing" secondItem="eIM-Qu-mIj" secondAttribute="trailing" id="vOP-Co-jjf"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -78,7 +89,7 @@
         <scene sceneID="haR-Jo-jw2">
             <objects>
                 <tableViewController id="9B2-dr-egg" customClass="AddItemViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="bDL-SB-Lmc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="bDL-SB-Lmc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
