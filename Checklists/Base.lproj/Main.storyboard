@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Checklists-->
+        <!--Name of the Checklist-->
         <scene sceneID="oxG-b3-De6">
             <objects>
                 <tableViewController id="AfM-Cn-iCv" customClass="ChecklistViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +58,7 @@
                             <outlet property="delegate" destination="AfM-Cn-iCv" id="9V5-ts-XAc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checklists" id="gCU-Nv-eiF">
+                    <navigationItem key="navigationItem" title="Name of the Checklist" largeTitleDisplayMode="never" id="gCU-Nv-eiF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9DQ-Yv-0fO">
                             <connections>
                                 <segue destination="9B2-dr-egg" kind="show" identifier="AddItem" id="tca-pO-QJp"/>
@@ -69,6 +69,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7u5-W6-bdF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="119.86607142857142"/>
+        </scene>
+        <!--Checklists-->
+        <scene sceneID="wbi-c3-BHY">
+            <objects>
+                <tableViewController id="M2q-Lf-1T9" customClass="AllListsViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="axF-uN-mzX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="M2q-Lf-1T9" id="Dj7-3N-Awr"/>
+                            <outlet property="delegate" destination="M2q-Lf-1T9" id="TwS-pg-FJb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Checklists" id="Dq3-ql-XHv"/>
+                    <connections>
+                        <segue destination="AfM-Cn-iCv" kind="show" id="nUX-e7-b7Q"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NjE-o7-qMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="120"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KD2-ra-3pi">
@@ -81,12 +103,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="AfM-Cn-iCv" kind="relationship" relationship="rootViewController" id="mxe-QI-dp3"/>
+                        <segue destination="M2q-Lf-1T9" kind="relationship" relationship="rootViewController" id="wQa-Po-Wjh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FsJ-n4-3eZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+            <point key="canvasLocation" x="-775" y="120"/>
         </scene>
         <!--Add Item-->
         <scene sceneID="haR-Jo-jw2">

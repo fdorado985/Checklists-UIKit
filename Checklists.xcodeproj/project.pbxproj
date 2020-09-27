@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A906CBD42520F1FF00C77035 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A906CBD32520F1FF00C77035 /* AllListsViewController.swift */; };
 		A912E9AB25194F980051FF33 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912E9AA25194F980051FF33 /* ChecklistItem.swift */; };
 		A94803F525194040000A8689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94803F425194040000A8689 /* AppDelegate.swift */; };
 		A94803F725194040000A8689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94803F625194040000A8689 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A906CBD32520F1FF00C77035 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		A912E9AA25194F980051FF33 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		A94803F125194040000A8689 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94803F425194040000A8689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,10 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				A948040225194041000A8689 /* Info.plist */,
-				A97A03FE251A5A3100754364 /* ItemDetailViewController.swift */,
+				A906CBD32520F1FF00C77035 /* AllListsViewController.swift */,
 				A94803F425194040000A8689 /* AppDelegate.swift */,
 				A912E9AA25194F980051FF33 /* ChecklistItem.swift */,
 				A94803F825194040000A8689 /* ChecklistViewController.swift */,
+				A97A03FE251A5A3100754364 /* ItemDetailViewController.swift */,
 				A94803F625194040000A8689 /* SceneDelegate.swift */,
 				A94803FD25194041000A8689 /* Assets.xcassets */,
 				A94803FF25194041000A8689 /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 			files = (
 				A97A03FF251A5A3100754364 /* ItemDetailViewController.swift in Sources */,
 				A94803F925194040000A8689 /* ChecklistViewController.swift in Sources */,
+				A906CBD42520F1FF00C77035 /* AllListsViewController.swift in Sources */,
 				A94803F525194040000A8689 /* AppDelegate.swift in Sources */,
 				A94803F725194040000A8689 /* SceneDelegate.swift in Sources */,
 				A912E9AB25194F980051FF33 /* ChecklistItem.swift in Sources */,
