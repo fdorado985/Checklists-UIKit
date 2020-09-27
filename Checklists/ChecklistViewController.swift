@@ -64,6 +64,16 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     return documentsDirectory().appendingPathComponent("Checklists.plist")
   }
 
+  func saveChecklistItems() {
+    let encoder = PropertyListEncoder()
+    do {
+      let data = try encoder.encode(items)
+      try data.write(to: dataFilePath(), options: .atomic)
+    } catch {
+      print("Error encoding items array: \(error.localizedDescription)")
+    }
+  }
+
   // MARK: - Table View Data Source
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return items.count
@@ -87,6 +97,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
       configureCheckmark(for: cell, with: item)
     }
     tableView.deselectRow(at: indexPath, animated: true)
+    saveChecklistItems()
   }
 
   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -94,6 +105,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 
     let indexPaths = [indexPath]
     tableView.deleteRows(at: indexPaths, with: .automatic)
+    saveChecklistItems()
   }
 
   // MARK: - Add Item ViewController Delegates
@@ -110,6 +122,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     let indexPaths = [indexPath]
     tableView.insertRows(at: indexPaths, with: .automatic)
     navigationController?.popViewController(animated: true)
+    saveChecklistItems()
   }
 
   func itemDetailViewController(_ controller: ItemDetailViewController, didFinishEditing item: ChecklistItem) {
@@ -120,6 +133,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
       }
     }
     navigationController?.popViewController(animated: true)
+    saveChecklistItems()
   }
 
   // MARK: - Navigation
