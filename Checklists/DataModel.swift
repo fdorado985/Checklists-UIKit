@@ -10,8 +10,18 @@ import Foundation
 class DataModel {
   var lists = [Checklist]()
 
+  var indexOfSelectedChecklist: Int {
+    get {
+      return UserDefaults.standard.integer(forKey: "ChecklistIndex")
+    }
+    set {
+      UserDefaults.standard.set(newValue, forKey: "ChecklistIndex")
+    }
+  }
+
   init() {
     loadChecklists()
+    registerValues()
   }
 
   // MARK: - Data Saving
@@ -44,5 +54,10 @@ class DataModel {
         print("Error decoding list array: \(error.localizedDescription)")
       }
     }
+  }
+
+  func registerValues() {
+    let dictionary = ["ChecklistIndex": -1]
+    UserDefaults.standard.register(defaults: dictionary)
   }
 }
