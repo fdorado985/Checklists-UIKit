@@ -14,7 +14,11 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationController?.navigationBar.prefersLargeTitles = true
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    tableView.reloadData()
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -33,10 +37,23 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+    let cell: UITableViewCell!
+    if let c = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) {
+      cell = c
+    } else {
+      cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
+    }
+
     let checklist = dataModel.lists[indexPath.row]
     cell.textLabel?.text = checklist.name
     cell.accessoryType = .detailDisclosureButton
+    
+    let uncheckedItems = checklist.countUncheckedItems()
+    if checklist.items.isEmpty {
+      cell.detailTextLabel?.text = "(No Items)"
+    } else {
+      cell.detailTextLabel?.text = uncheckedItems > 0 ? "\(uncheckedItems) Remaining" : "All Done!"
+    }
     return cell
   }
 

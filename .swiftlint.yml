@@ -68,6 +68,7 @@ legacy_hashing: error
 
 identifier_name:
   excluded:
+    - c
     - i
     - id
     - x
