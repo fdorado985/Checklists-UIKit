@@ -17,20 +17,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="UKr-QU-EAc">
-                                <rect key="frame" x="0.0" y="28" width="414" height="45"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="45.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UKr-QU-EAc" id="9Eg-pI-Hrg">
-                                    <rect key="frame" x="0.0" y="0.0" width="351" height="45"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="351" height="45.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIM-Qu-mIj">
-                                            <rect key="frame" x="51" y="12" width="300" height="21"/>
+                                            <rect key="frame" x="51" y="12" width="300" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⬛️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW3-bh-MaY">
-                                            <rect key="frame" x="20" y="12" width="23" height="21"/>
+                                            <rect key="frame" x="20" y="12.5" width="23" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="23" id="kcq-Yr-zeq"/>
                                             </constraints>
@@ -336,6 +336,7 @@
         <segue reference="fI8-Pq-nWR"/>
         <segue reference="lDB-LF-P0u"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.015686274509803921" green="0.66274509803921566" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
