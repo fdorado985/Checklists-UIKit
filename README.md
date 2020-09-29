@@ -39,5 +39,5 @@ screen.
 * [x] Improving the first-run experience for the user so that the app looks more polished and user-friendly.
 * [x] Show the number of to-do items remaining for each list.
 * [x] Sort the list of checklist items alphabetically.
-* [ ] Add the ability to specify a helpful icon for each list item to indicate what the list is about.
+* [x] Add the ability to specify a helpful icon for each list item to indicate what the list is about.
 * [ ] Improve how the app looks by making a few basic colour changes to give it its own unique style.
