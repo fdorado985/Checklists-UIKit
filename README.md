@@ -41,3 +41,7 @@ screen.
 * [x] Sort the list of checklist items alphabetically.
 * [x] Add the ability to specify a helpful icon for each list item to indicate what the list is about.
 * [x] Improve how the app looks by making a few basic colour changes to give it its own unique style.
+* [ ] Try out a local notification just to see how it works.
+* [ ] Allow the user to pick a due date for to-do items.
+* [ ] Create a date picker control.
+* [ ] Schedule local notifications for the to-do items, and update them when the user changes the due date.
